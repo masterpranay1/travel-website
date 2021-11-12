@@ -1,0 +1,32 @@
+section.packages {
+    width: 100%;
+    h1 {
+        font-size: calc(var(--fs-xl) * 1.6);
+        margin: var(--mt, 3rem) auto;
+        width: fit-content;
+    }
+    h1 span {
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+    h1 span:nth-last-child(1), span:nth-last-child(2), span:nth-last-child(3) {
+        color: white;
+    }
+    .box-container {
+        flex-wrap: wrap;
+        gap: 2em;
+        .box {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 20em;
+            padding: 1em;
+            img {
+                width: 100%;
+            }
+            .content {
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+
+    // font family 
+    --ff : 'Roboto', sans-serif;
+
+    // font weight 
+    --fw-300 : 300;
+    --fw-400 : 400;
+    --fw-500 : 500;
+    --fw-700 : 700;
+
+    // colors
+    --clr-pri : #edf8ef;
+    --clr-sec : rgba(0, 0, 0, 0.8);
+    --clr-sec-l : rgba(0, 0, 0, 0.6);
+    --clr-sec-xl : rgba(0, 0, 0, 0.4);
+    --clr-ter : rgba(255, 255, 255, 1);
+    --clr-ter-l : rgba(255, 255, 255, 0.8);
+    --clr-ter-xl : rgba(255, 255, 255, 0.6);
+
+    // font sizes 
+    --fs-xl : 2em; // 32px
+    --fs-l : 1.5em; // 24px
+    --fs-med : 1.25em; // 20px
+    --fs-s : 1em; // 16px
+    --fs-xs : 0.75em; // 12px
+    @include breakpoint-down(tablet) {
+        --fs-xl : 1.8em;
+        --fs-l : 1.3em;
+        --fs-med : 1.05em;
+        --fs-s : 0.8em;
+        --fs-xs : 0.55em;
+    }
+    @include breakpoint-down(mid-tablet) {
+        --fs-xl : 1.6em;
+        --fs-l : 1.1em;
+        --fs-med : 0.85em;
+        --fs-s : 0.7em;
+        --fs-xs : 0.6em;
+    }
+}
+
+@for $i from 0 through 4 {
+    .fw-#{300+100*$i} {
+        font-weight: var(--fw-#{300+100*$i});
+    }
+}
+
+.clr-pri {
+    &-bg {
+        background: var(--clr-pri);
+    }
+    &-text {
+        color: var(--clr-pri);
+    }
+}
+.clr-sec {
+    &-bg {
+        background: var(--clr-sec);
+    }
+    &-text {
+        color: var(--clr-sec);
+    }
+}
+.clr-sec-l {
+    &-bg {
+        background: var(--clr-sec-l);
+    }
+    &-text {
+        color: var(--clr-sec-l);
+    }
+}
+.clr-sec-xl {
+    &-bg {
+        background: var(--clr-sec-xl);
+    }
+    &-text {
+        color: var(--clr-sec-xl);
+    }
+}
+.clr-ter {
+    &-bg {
+        background: var(--clr-ter);
+    }
+    &-text {
+        color: var(--clr-ter);
+    }
+}
+.clr-ter-l {
+    &-bg {
+        background: var(--clr-ter-l);
+    }
+    &-text {
+        color: var(--clr-ter-l);
+    }
+}
+.clr-ter-xl {
+    &-bg {
+        background: var(--clr-ter-xl);
+    }
+    &-text {
+        color: var(--clr-ter-xl);
+    }
+}
+.fs-xl {
+    font-size: var(--fs-xl);
+}
+.fs-l {
+    font-size: var(--fs-l);
+}
+.fs-med {
+    font-size: var(--fs-med);
+}
+.fs-s {
+    font-size: var(--fs-s);
+}
+.fs-xs {
+    font-size: var(--fs-xs);
+}

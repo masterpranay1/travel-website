@@ -1,0 +1,49 @@
+section.book, section.contact {
+    width: 100%;
+    h1 {
+        font-size: calc(var(--fs-xl) * 1.8);
+        margin: var(--mt, 3rem) auto;
+    }
+    h1 span {
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+    h1 span:nth-last-child(1), span:nth-last-child(2), span:nth-last-child(3) {
+        color: white;
+    }
+    .row {
+        width: 100%;
+        div.image {
+            width: 50%;
+        }
+        form {
+            width: 50%;
+            gap: 2em;
+            h3 {text-transform: uppercase; font-weight: 300;}
+            input {
+                padding: 0.5em 1em;
+                width: 70%;
+            }
+            input:placeholder-shown {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+@include breakpoint-down(tablet) {
+    section.book, section.contact {
+        .row {
+            flex-direction: column;
+            align-items: center;
+            div.image {
+                width: 60%;
+            }
+            form {
+                width: 60%;
+                margin-top: 4em;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

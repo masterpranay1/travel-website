@@ -1,0 +1,83 @@
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--ff);
+    // padding-bottom: 5em;
+}
+
+.flex {
+  display: flex;
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-as-c {
+    align-self: center;
+  }
+  &-col {
+      flex-direction: column;
+  }
+  &-row {
+      flex-direction: row;
+  }
+}
+
+.center {
+    text-align: center;
+}
+
+.button, .btn , button  {
+    width: fit-content;
+    height: fit-content;
+    padding: 1em 2em;
+    cursor: pointer;
+
+    background-color: var(--clr-sec, black);
+    color: var(--clr-ter, white);
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+a, .a {
+    text-decoration: none;
+    color: var(--clr-sec);
+}
+
+.hide {
+    display: none;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitialize {
+    text-transform: capitalize;
+}
+
+.ml {
+  margin-left: var(--ml, 2em);
+}
+.mr {
+  margin-right: var(--mr, 2em);
+}
+.mt {
+  margin-top: var(--mt, 2em);
+}
+.mb {
+  margin-bottom: var(--mb, 2em);
+}

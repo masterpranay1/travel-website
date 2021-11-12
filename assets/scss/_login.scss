@@ -1,0 +1,21 @@
+.login-form-container {
+    form {
+        width: fit-content;
+        i {cursor: pointer;}
+        input {
+            padding: .5em 1em;
+            font-size: var(--fs-med);
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid black;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.5);
+        }
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 2em;
+        a:hover {
+            color : var(--clr-sec-l)
+        }
+    }
+}

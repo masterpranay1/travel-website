@@ -1,0 +1,23 @@
+section.review {
+    width: 100%;
+    h1 {
+        font-size: calc(var(--fs-xl) * 1.8);
+        margin: var(--mt, 3rem) auto;
+        width: fit-content;
+    }
+    h1 span {
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+    h1 span:nth-last-child(1), span:nth-last-child(2), span:nth-last-child(3) {
+        color: white;
+    }
+    .box {
+        max-width: 35ch;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

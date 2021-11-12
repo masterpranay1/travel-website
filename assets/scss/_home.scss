@@ -1,0 +1,43 @@
+section.home {
+  height: 40em;
+  max-height: 100vh;
+  width: 100%;
+  .content {
+    --ml : 10em;
+    --mt : 5em;
+    cursor: default;
+    padding: 2em;
+    width: fit-content;
+    background: rgba(0, 0, 0, .2);
+    h3 {
+      font-size: calc(var(--fs-xl) * 1.5);
+      color: white;
+    }
+    .btn:hover {
+        background: var(--clr-ter);
+        color: var(--clr-sec);
+    }
+  }
+  background-image: url(/assets/images/destinations01.jpg);
+  background-repeat: none;
+  background-size: cover;
+  transition: 1s;
+}
+@include breakpoint-down(desktop) {
+    section.home {
+        .content {
+            --ml : 5em;
+            max-width: 30em;
+        }
+    }
+}
+@include breakpoint-down(tablet) {
+    section.home {
+        .content {
+            --ml : 0em;
+            --mt : 5em;
+            max-width: 20em;
+            margin: 5em auto;
+        }
+    }
+}
