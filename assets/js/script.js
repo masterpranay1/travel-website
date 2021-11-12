@@ -33,7 +33,7 @@ const heroImage = document.querySelector("section.home");
 let imgNum = 1;
 const changeHeroImage = () => {
   imgNum++;
-  heroImage.style.backgroundImage = `url(/assets/images/destinations0${imgNum}.jpg)`;
+  heroImage.style.backgroundImage = `url(https://github.com/masterpranay1/travel-website/blob/main/assets/images/destinations0${imgNum}.jpg)`;
   if (imgNum == 4) imgNum = 1;
 };
 setInterval(changeHeroImage, 3000);
